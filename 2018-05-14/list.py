@@ -1,12 +1,21 @@
 # list
-list = ["luoxiaolei","baotou"]
-print(list)
+mylist = ["luoxiaolei","baotou"]
+print(mylist)
 
-list = ["luoxiaolei","baotou",["reading","running"]]
-print(list)
+mylist = ["luoxiaolei","baotou",["reading","running"]]
+print(mylist)
 
-def print_list(list):
-	for each_item in list:
+def print_list(mylist):
+	for each_item in mylist:
 		print(each_item)
 
-print_list(list)
+print_list(mylist)
+
+def print_list_recursive(mylist):
+	for each_item in mylist:
+		if isinstance(each_item,list):
+			print_list_recursive(each_item)
+		else:
+			print(each_item)
+
+print_list_recursive(mylist)
