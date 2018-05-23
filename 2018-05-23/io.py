@@ -20,3 +20,11 @@ for each_line in read.readlines():
 read.close();
 
 print(os.path.exists('test.txt'))
+
+print(os.curdir)
+
+print(os.pardir)
+
+print(os.sep)
+
+print(os.devnull)
