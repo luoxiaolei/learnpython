@@ -15,7 +15,7 @@ sourceUrl = 'https://github.com/Alvin9999/new-pac/wiki/ss%E5%85%8D%E8%B4%B9%E8%B
 
 pngUrlRegex = re.compile(r'https://.*\.PNG')
 
-updateDateRegex = re.compile(r'\d{4}年\d{1,2}月\d{1,2}日更新')
+updateDateRegex = re.compile(r'\d{4}年\d{1,2}月\d{1,2}日')
 
 response = requests.get(sourceUrl)
 
